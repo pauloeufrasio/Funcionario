@@ -1,8 +1,8 @@
 public class Funcionario {
     private String nome;
     private String cpf;
-    // Alterando Atributo salario pra protected onde que só a classe filho pode acessar esse atributo atraves da chamada (super)
-    protected double salario;
+    // Alterando Atributo para privado por boa pratica e retirando o protected da Classe e acessando os atributos atraves do (super) e getters
+    private double salario;
 
     // Criando construtor
     public  Funcionario(){

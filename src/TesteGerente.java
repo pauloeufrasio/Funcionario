@@ -15,5 +15,6 @@ public class TesteGerente {
         boolean autenticou = g1.autentica(1234); // esse metodo esta dentro da classe gerente
         // Printando na tela pra ver se autenticou
         System.out.println(autenticou);
+        System.out.println(g1.getBonificacao());
     }
 }

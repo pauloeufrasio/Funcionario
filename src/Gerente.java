@@ -18,8 +18,9 @@ public class Gerente extends Funcionario {
             return  false;
         }
     }
+    // Modificando getBonificação e retirando protected do atributo da classe funcionario e accesando atraves do super.getBonificacao() + super.getSalario()
     public double getBonificacao(){
-        return super.salario;
+        return super.getBonificacao() +super.getSalario();
 
     }
 }
