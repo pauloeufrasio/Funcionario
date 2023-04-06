@@ -1,11 +1,24 @@
-// gerente é um funcionario, Gerente herda do funcionarioAutenticavel
-public class Gerente extends FuncionarioAutenticavel {
+// gerente é um funcionario, Gerente herda da classe funcionario, assina o contrato autenticavel
+public class Gerente extends Funcionario implements Autenticavel{
+    private AutenticacaoUtil autenticador;
+    public Gerente(){
+        this.autenticador = new AutenticacaoUtil();
+    }
+
+    @Override
+    public void setSenha(int senha) {
+        this.autenticador.setSenha(senha);
+
+    }
+
+    @Override
+    public boolean autentica(int senha) {
+        return this.autenticador.autentica(senha);
+    }
 
 
-    // Modificando getBonificação e retirando protected do atributo da classe funcionario e accesando atraves do super.getBonificacao() + super.getSalario()
-    public double getBonificacao(){
-        System.out.println("Estou chamando o método bonificação do GERENTE ");
-        return super.getSalario();
-
+    @Override
+    public double getBonificacao() {
+        return 0;
     }
 }

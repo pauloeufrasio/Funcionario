@@ -2,7 +2,7 @@ public class TesteReferencia {
 
     public static void main(String[] args) {
         // polimofismo é um objeto que pode ser referenciado atraves de uma referencia do mesmo tipo
-        Funcionario g1 = new Gerente();
+        Gerente g1 = new Gerente();
         g1.setNome("Marcos");
         g1.setSalario(5000.0);
 

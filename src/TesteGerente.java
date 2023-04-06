@@ -10,11 +10,11 @@ public class TesteGerente {
         System.out.println(g1.getCpf());
         System.out.println(g1.getSalario());
         // Criando senha pro metodo autentica
-        g1.setSenha(1234);
+         g1.setSenha(222);
         // Criando variavel pra verificar se autentica a senha do gerente marcos
-        boolean autenticou = g1.autentica(1234); // esse metodo esta dentro da classe gerente
+        boolean autenticou = g1.autentica(222); // esse metodo esta dentro da classe gerente
         // Printando na tela pra ver se autenticou
         System.out.println(autenticou);
-        System.out.println(g1.getBonificacao());
+
     }
 }
