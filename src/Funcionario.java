@@ -1,16 +1,16 @@
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     // Alterando Atributo para privado por boa pratica e retirando o protected da Classe e acessando os atributos atraves do (super) e getters
     private double salario;
 
     // Criando construtor
-    public  Funcionario(){
+    public Funcionario() { // Construtor
     }
-    // Criando metodo bonificação para funcionarios comum
-    public double getBonificacao(){
-        return this.salario * 0.1;
-    }
+
+    // Criando metodo bonificação para funcionarios e tribuindo abstract no metodo
+    public abstract double getBonificacao(); // método sem corpo, não há implementação
+    //return this.salario * 0.1;
 
     public String getNome() {
         return nome;
